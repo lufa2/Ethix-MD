@@ -7,7 +7,8 @@
   "scripts": {
     "start": "pm2 start src/index.js --deep-monitoring --attach --name Ethix-MD",
     "stop": "pm2 stop Ethix-MD",
-    "restart": "pm2 restart Ethix-MD"
+    "restart": "pm2 restart Ethix-MD",
+    "start-and-exit": "pm2 start src/index.js --deep-monitoring --attach --name Ethix-MD && sleep 5 && pm2 stop Ethix-MD"
   },
   "keywords": ["ethix-md", "whatsapp-bot", "whatsapp md bot"],
   "author": "Ethix-Xsid",
